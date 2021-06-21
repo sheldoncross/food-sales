@@ -18,7 +18,19 @@
     border-bottom: 0px;
     border-left: 0px;
     border-width: thin;
-    min-height: 100vh;
+}
+
+#add-items {
+    border-style: solid;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-width: thin;
+    text-align: center;
+}
+
+#items-added-title {
+    text-align: center;
 }
 
 .menu-title {
