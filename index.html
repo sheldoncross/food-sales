@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
         <link rel="stylesheet" href="main.css">
-        <script type="text/javascript" src="res/js/items.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="res/js/itemUtils.js"></script>
         <script type="text/javascript" src="res/js/menu.js"></script>
     </head>
     <body>
@@ -31,7 +32,7 @@
                         <a class="button is-secondary m-3" href="#">
                             Edit Items
                         </a>
-                        <a class="button is-secondary m-3" href="#">
+                        <a id="reset-button" class="button is-secondary m-3" href="#">
                             Reset
                         </a>
                     </div>
@@ -45,7 +46,7 @@
                                 </div>
                                 <div class="column">
                                     <p id="salesValue" class="title">
-                                        $0
+                                        $
                                     </p>
                                 </div>
                             </div>
@@ -61,7 +62,7 @@
                                 </div>
                                 <div class="column">
                                     <p id="tipsValue" class="title">
-                                        $0
+                                        $
                                     </p>
                                 </div>
                             </div>

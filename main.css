@@ -46,3 +46,15 @@
     padding: 0;
     text-align: center;
 }
+
+.dropdown-item {
+    text-align: center;    
+}
+
+.added-item-value {
+    text-align: center;
+}
+
+.added-item-cost {
+    text-align: center;
+}

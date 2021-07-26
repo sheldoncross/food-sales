@@ -10,10 +10,10 @@
         <link rel="stylesheet" href="main.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/8c74bfd27f.js"></script>
-        <script type="text/javascript" src="res/js/items.js"></script>
+        <script type="text/javascript" src="res/js/itemUtils.js"></script>
         <script type="text/javascript" src="res/js/addItems.js"></script>
     </head>
-    <body>
+    <body id="body">
         <nav class="navbar">
             <div class="navbar-brand">
                 <!--Page Tiitle-->
@@ -22,7 +22,7 @@
                 </p>
             </div>
         </nav> 
-        <div class="box is-fullheight-with-navbar">
+        <div class="box is-fullheight-with-navbar p-0">
             <div class="columns">
                 <div id="add-items" class="column">
                     <p class="title is-3">
@@ -32,8 +32,8 @@
                         
                     </div>
                 </div>
-                <div class="column">
-                    <p id="items-added-title" class="title is-3">
+                <div id="items-added-title-col" class="column">
+                    <p id="items-added-title" class="title is-3 mb-2">
                         Items Added
                     </p>
                 </div>
