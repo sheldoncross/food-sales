@@ -90,3 +90,29 @@ html {
 #items-added-button {
     background-color: #E85A4F;
 }
+
+.progress {
+    height: 50px;
+    border: thin solid #8E8D8A;
+}
+
+.progress-bar{
+    background-color: #7EE974;
+    height: 50px;
+    width: 100%;
+    /*
+    animation: progressFill 1s linear;
+    animation-fill-mode: forwards;
+    */
+}
+
+/*
+@keyframes progressFill {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 20%;
+    }
+};
+*/

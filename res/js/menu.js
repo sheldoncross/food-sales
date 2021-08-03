@@ -17,7 +17,6 @@ window.onload = function() {
         for(let [itemKey, itemValue] of Object.entries(category)) {
             if(countTable[categoryCount][itemKey] > 0){
                 totalSalesVal+= itemValue;
-                console.log(totalSalesVal);
             }
         }
         categoryCount++;
@@ -76,4 +75,24 @@ window.onload = function() {
         //Get the next header
         nextHeader++;
     }
+
+    var supportedFlag = $.keyframe.isSupported();
+
+    let progress = totalSalesVal/1000*100;
+    
+    $.keyframe.define([{
+        name: 'animateProgress',
+        '0%': {
+            'width' : '0%'
+        },
+        '100%': {
+            'width' : `${progress}%`
+        }
+        }
+    ]);
+
+    $('.progress-bar').playKeyframe({
+        name: 'animateProgress',
+        duration: '1s',
+    })
 }
